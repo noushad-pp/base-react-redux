@@ -1,0 +1,23 @@
+@import '../../data/assets/style/style_import';
+
+.HeaderContainer {
+    padding: 5px 0;
+
+    .LogoContainer {
+        align-items: center;
+
+        img {
+            margin-right: 10px;
+            max-height: 30px;
+        }
+    }
+
+    .ActionsContainer {
+        .AvatarIcon {
+            &:hover {
+                color: #f56a00;
+                background-color: #fde3cf;
+            }
+        }
+    }
+}

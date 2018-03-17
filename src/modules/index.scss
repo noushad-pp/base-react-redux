@@ -1,0 +1,47 @@
+@import "../data/assets/style/style_import";
+
+.AppContainer {
+    .AppHeaderContainer {
+        padding: 0 30px;
+        height: auto;
+        line-height: 1;
+    }
+
+    .AppContentLayoutContainer {
+        .AppContentContainer {
+            .AppFooter {
+                text-align: center;
+                padding: 15px;
+            }
+        }
+    }
+
+    .SidebarContainer {
+        background: $default;
+
+        &.ant-layout-sider-collapsed {
+            .Sidebar {
+                padding: 0 !important;
+            }
+        }
+
+        .ant-layout-sider-trigger {
+            position: inherit;
+            background: $default;
+            color: $font-color;
+            height: 50px;
+            line-height: 30px !important;
+
+            .anticon-left {
+                float: right;
+                margin-right: 15px;
+            }
+        }
+
+        .ant-layout-sider-children {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+

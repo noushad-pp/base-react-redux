@@ -1,0 +1,129 @@
+/*
+Slightly lighten a color
+@access public
+@param {Color} $color - color to tint
+@param {Number} $percentage - percentage of `$color` in returned color
+@return {Color}
+*/
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+/*
+Slightly darken a color
+@access public
+@param {Color} $color - color to shade
+@param {Number} $percentage - percentage of `$color` in returned color
+@return {Color}
+*/
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
+
+/*
+animation mixin: 
+eg: @include keyframes(slide-down) { 0% { opacity: 1; } 90% { opacity: 0; } } 
+@include animation('slide-down 5s 3');
+*/
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+//transition - usage eg: @include transition(color .3s ease);
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+//breakpoint
+//eg: @include breakpoint(sm) { float: none; width: 100%; }
+
+@mixin breakpoint($class) {
+    @if $class == xs {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $class == sm {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $class == md {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @else if $class == lg {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+//------------------------ common used mixin ----------------------
+
+@mixin create-box($height, $width) {
+    height: $height !important;
+    width: $width !important;
+}
+
+//------------------------- MIXINS for padding --------------------
+
+@mixin lr-padding($padding) {
+    padding-left: $padding !important;
+    padding-right: $padding !important;
+}
+
+@mixin tb-padding($padding) {
+    padding-top: $padding !important;
+    padding-bottom: $padding !important;
+}
+
+//------------------------- MIXINS for margin ----------------------
+
+@mixin lr-margin($margin) {
+    margin-left: $margin !important;
+    margin-right: $margin !important;
+}
+
+@mixin tb-margin($margin) {
+    margin-top: $margin !important;
+    margin-bottom: $margin !important;
+}

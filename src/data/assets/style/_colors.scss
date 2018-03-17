@@ -1,0 +1,59 @@
+@import "mixins";
+
+$primary: #0747a6 !default;
+$default: #f4f5f7;
+$default-light: #f9f9fc;
+$default-dark: #dfe2e5;
+$font-color: #172b4d;
+$font-color-light: #5e6c84;
+$font-color-lighter: rgba(67, 83, 112, 0.4);
+
+$info: #4da1ff !default;
+$success: #90b900 !default;
+$warning: #f5a623 !default;
+$danger: #ff6d4a !default;
+
+$violet: #7c4dc4 !default;
+$white: #ffffff !default;
+$black: #000000 !default;
+$green: #35cd4a;
+
+$disabled: #dddddd;
+$disabled-bg: tint($disabled, 15%);
+$border: #dfe3e9;
+$border-light: tint($border, 15%);
+$border-ultra-light: #ebeced;
+$input-border: shade($border, 5%);
+$input-background: #ffffff;
+
+$primary-bg-light: #fddee1;
+$warning-bg-light: #ffdfab;
+$success-bg-light: #e6f3bb;
+$info-bg-light: #cfe5fd;
+$danger-bg-light: #fbd3ca;
+$violet-bg-light: #dbcaf5;
+$green-bg-light: #c4facc;
+
+$primary-bg: tint($primary, 20%);
+$info-bg: tint($info, 20%);
+$success-bg: tint($success, 20%);
+$warning-bg: tint($warning, 20%);
+$danger-bg: tint($danger, 20%);
+$violet-bg: tint($violet, 20%);
+$green-bg: tint($green, 20%);
+
+$primary-light: tint($primary, 30%);
+$info-light: tint($info, 30%);
+$success-light: tint($success, 30%);
+$warning-light: tint($warning, 30%);
+$danger-light: tint($danger, 30%);
+$violet-light: tint($violet, 30%);
+$green-light: tint($green, 30%);
+
+$primary-dark: shade($primary, 15%);
+$info-dark: shade($info, 15%);
+$success-dark: shade($success, 15%);
+$warning-dark: shade($warning, 15%);
+$danger-dark: shade($danger, 15%);
+$violet-dark: shade($violet, 15%);
+$green-dark: shade($green, 15%);

@@ -1,0 +1,73 @@
+@import "mixins";
+
+@include keyframes(spin) {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+
+@include keyframes(scroll-up) {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -100%;
+    }
+}
+
+
+@include keyframes(ticker) {
+    0% {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
+@include keyframes(diagonal-scrollup) {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: -100%;
+        left: -70%;
+    }
+}
+
+
+@include keyframes(move-bg) {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@include keyframes(click-ripple-out) {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+

@@ -1,0 +1,21 @@
+@import '../../data/assets/style/style_import';
+
+.Sidebar {
+    font-family: $secondary-font-family;
+    padding: 10px 15px;
+
+    .SidebarMenuContainer {
+        border-right: none;
+
+        .ant-menu-item {
+            &.ant-menu-item-selected {
+                background: $default-dark;
+                color: #0747a6;
+
+                &:after {
+                    border-right-color: transparent;
+                }
+            }
+        }
+    }
+}

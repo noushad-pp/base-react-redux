@@ -1,0 +1,210 @@
+@import "colors";
+@import "variables";
+
+//---------------------- BUTTON CLASSES ----------------------
+.btn-fill-primary {
+    color: $white !important;
+    background-color: $primary !important;
+    border-color: $primary !important;
+
+    &:hover, &:focus, &.active {
+        background-color: $primary-bg !important;
+        border-color: $primary-bg !important;
+    }
+}
+
+.btn-fill-green {
+    color: $white !important;
+    background-color: $green !important;
+    border-color: $green !important;
+
+    &:hover, &:focus, &.active {
+        background-color: $green-bg !important;
+        border-color: $green-bg !important;
+    }
+}
+
+.btn-fill-violet {
+    color: $white !important;
+    background-color: $violet !important;
+    border-color: $violet !important;
+
+    &:hover, &:focus, &.active {
+        background-color: $violet-bg !important;
+        border-color: $violet-bg !important;
+    }
+}
+
+.btn-fill-warning {
+    color: $white !important;
+    background-color: $warning !important;
+    border-color: $warning !important;
+
+    &:hover, &:focus, &.active {
+        background-color: $warning-bg !important;
+        border-color: $warning-bg !important;
+    }
+}
+
+.btn-fill-success {
+    color: $white !important;
+    background-color: $success !important;
+    border-color: $success !important;
+
+    &:hover, &:focus, &.active {
+        background-color: $success-bg !important;
+        border-color: $success-bg !important;
+    }
+}
+
+.btn-pill {
+    border-radius: 20px;
+}
+
+//---------------------- Ghost Button -----------------------
+.btn-ghost-green {
+    color: $green !important;
+    border: 1px solid $green !important;
+    height: auto !important;
+    line-height: unset !important;
+
+    &:hover, &:focus {
+        background-color: $green-bg-light !important;
+        border: 1px solid transparent !important;
+    }
+}
+
+.btn-ghost-primary {
+    color: $primary !important;
+    border: 1px solid $primary !important;
+    height: auto !important;
+    line-height: unset !important;
+
+    &:hover, &:focus {
+        background-color: $primary-bg-light !important;
+        border: 1px solid transparent !important;
+    }
+}
+
+.btn-ghost-info {
+    color: $info !important;
+    border: 1px solid $info !important;
+    height: auto !important;
+    line-height: unset !important;
+
+    &:hover, &:focus {
+        background-color: $info-bg-light !important;
+        border: 1px solid transparent !important;
+    }
+}
+
+.btn-ghost-warning {
+    color: $warning !important;
+    border: 1px solid $warning !important;
+    height: auto !important;
+    line-height: unset !important;
+
+    &:hover,&:focus {
+        background-color: $warning-bg-light !important;
+        border: 1px solid transparent !important;
+    }
+}
+
+.btn-ghost-success {
+    color: $success !important;
+    border: 1px solid $success !important;
+    height: auto !important;
+    line-height: unset !important;
+
+    &:hover,&:focus {
+        background-color: $success-bg-light !important;
+        border: 1px solid transparent !important;
+    }
+}
+
+//------------------------ TAG CLASSES ----------------------------
+
+.tag-green {
+    color: $green !important;
+    background-color: $green-bg-light !important;
+    border: 1px solid transparent !important;
+    cursor: default !important;
+    height: auto !important;
+    line-height: unset !important;
+}
+
+.tag-violet {
+    color: $violet !important;
+    background-color: $violet-bg-light !important;
+    border: 1px solid transparent !important;
+    cursor: default !important;
+    height: auto !important;
+    line-height: unset !important;
+}
+
+.tag-info {
+    color: $info !important;
+    background-color: $info-bg-light !important;
+    border: 1px solid transparent !important;
+    cursor: default !important;
+    height: auto !important;
+    line-height: unset !important;
+}
+
+.tag-success {
+    color: $success !important;
+    background-color: $success-bg-light !important;
+    border: 1px solid transparent !important;
+    cursor: default !important;
+    height: auto !important;
+    line-height: unset !important;
+}
+
+.tag-primary {
+    color: $primary !important;
+    background-color: $primary-bg-light !important;
+    border: 1px solid transparent !important;
+    cursor: default !important;
+    height: auto !important;
+    line-height: unset !important;
+}
+
+.tag-danger {
+    color: $danger !important;
+    background-color: $danger-bg-light !important;
+    border: 1px solid transparent !important;
+    cursor: default !important;
+    height: auto !important;
+    line-height: unset !important;
+}
+
+//---------------------------------------ANT ICON ---------------------------
+.anticon {
+    &.hover-icon {
+        &:hover {
+            color: $font-color !important;
+        }
+    }
+}
+
+.ant-tooltip {
+    .ant-tooltip-inner {
+        background: rgba(0, 0, 0, 0.4);
+        padding: 5px;
+        font-size: 10px;
+        min-height: auto;
+    }
+
+    .ant-tooltip-arrow {
+        bottom: 5px;
+        border-width: 3px 3px 0;
+        border-top-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+.ant-select-dropdown-menu-item-group-title {
+    color: $font-color-light;
+    font-weight: $font-bold;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+}
