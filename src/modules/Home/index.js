@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from "react-router-dom";
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -31,7 +32,7 @@ class Home extends Component {
     }
 
     login = () => {
-        this.props.actions.login();
+        this.props.history.push('/login');
     }
 
     retry = () => {
@@ -59,7 +60,8 @@ class Home extends Component {
 
 Home.propTypes = {
     page_details: PropTypes.object,
-    actions: PropTypes.object
+    actions: PropTypes.object,
+    history: PropTypes.object
 };
 
-export default connect(mapStateToProps, mapDispatchToProps, null, { withRef: true })(Home);
+export default connect(mapStateToProps, mapDispatchToProps, null)(withRouter(Home));

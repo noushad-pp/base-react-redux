@@ -14,6 +14,7 @@ import * as pageActions from '../data/redux/page_details/actions';
 
 import AppHeader from '../components/appheader';
 import Sidebar from '../components/sidebar';
+import Login from "./Login";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
 
@@ -63,7 +64,7 @@ class AppContainer extends Component {
     }
 
     render() {
-        const non_sidebar_pages = ['home'];
+        const non_sidebar_pages = ['home', 'login'];
         const { page_details } = this.props;
         const is_mobile = (page_details.device_data && (page_details.device_data.mobile || page_details.device_data.screen_width < 768));
         const show_sidebar = non_sidebar_pages.indexOf(page_details.current_page) === -1;
@@ -84,7 +85,8 @@ class AppContainer extends Component {
                         <Content className="AppContent flex-column full-flex">
                             <Router history={this.props.history}>
                                 <Switch>
-                                    <Route exact path="/" render={() => (is_logged_in ? (<Redirect to="/dashboard" />) : (<Home />))} />
+                                    <Route exact path="/login" component={Login} />
+                                    <Route exact path="/" render={() => (is_logged_in ? <Redirect to="/dashboard" /> : <Home />)} />
                                     <Route exact path="/dashboard" component={Dashboard} />
                                 </Switch>
                             </Router>
