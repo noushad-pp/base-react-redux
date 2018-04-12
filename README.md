@@ -5,7 +5,7 @@ Base-react-web is a comprehensive starter kit for rapid application development 
 
 ## Get Started
 1. **Initial Machine Setup**. First time running the base project? Then complete the [Initial Machine Setup](https://bitbucket.org/polestars/base-react-web#initial-machine-setup).
-2. **Clone the project**. `git clone git@bitbucket.org:polestars/base-react-web.git`
+2. **Clone the project**. `git clone https://github.com/noushad-pp/base-react-redux.git`
 3. **Change working directory**. `cd base-react-web`
 3. **Run the setup script**. `npm run setup`
 4. **Run the example app**. `npm start -s`
