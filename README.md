@@ -1,8 +1,4 @@
-<p align="center">
-	<img src="https://res.cloudinary.com/poletalks/image/upload/v1486390329/LogoCloudinary_wg5y2r.png"  height="100"/>
-</p>
-
-Base-react-web is a comprehensive starter kit for rapid application development using React used in poletalks projects. 
+Base-react-web is a comprehensive starter kit for rapid application development using React used in my projects. 
 
 1. **One command to get started** - Type `npm start` to start development in your default browser.
 2. **Automated production build** - Type `npm run build` to do all this:
