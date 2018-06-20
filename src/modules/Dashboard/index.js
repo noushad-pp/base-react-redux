@@ -8,6 +8,7 @@ import './index.scss';
 
 import * as CONSTANTS from '../../data/config/constants';
 import * as pageActions from '../../data/redux/page_details/actions';
+import { connectSocket } from '../../data/helpers/socket';
 
 function mapStateToProps(state) {
     return {
@@ -25,6 +26,25 @@ function mapDispatchToProps(dispatch) {
 class Dashboard extends Component {
     componentWillMount() {
         this.props.actions.pageChanged(CONSTANTS.appPages.dashboard);
+        //register for socket listners
+        this.registerSocketListners();
+    }
+
+    registerSocketListners = () => {
+        const socket = connectSocket();
+        const channel_id = "your_channel_id";
+
+        if (socket.socket_details.connected) {
+            socket.emit('join', channel_id);
+        }
+
+        socket.on('connect', (data) => {
+            socket.emit('join', channel_id);
+        });
+
+        socket.on('new_item', (data) => {
+            //your action here
+        });
     }
 
     render() {
