@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "description of your project",
   "engines": {
-    "npm": ">=3"
+    "npm": ">=8"
   },
   "scripts": {
     "preinstall": "node tools/nodeVersionCheck.js",
@@ -34,12 +34,13 @@
     "history": "4.7.2",
     "lodash": "4.17.10",
     "moment": "2.22.2",
+    "node-sass": "4.9.3",
     "object-assign": "4.1.1",
     "prop-types": "^15.6.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-moment": "0.7.6",
     "react-ga": "2.5.3",
+    "react-moment": "0.7.6",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "5.0.0-alpha.8",
@@ -62,7 +63,7 @@
     "babel-preset-react": "6.24.1",
     "babel-preset-react-hmre": "1.1.1",
     "babel-preset-stage-1": "6.24.1",
-    "browser-sync": "2.18.13",
+    "browser-sync": "2.24.7",
     "chalk": "2.3.0",
     "concurrently": "3.5.1",
     "connect-history-api-fallback": "1.5.0",
@@ -82,7 +83,6 @@
     "jest-cli": "21.2.1",
     "json-loader": "0.5.7",
     "mockdate": "2.0.2",
-    "node-sass": "4.7.2",
     "opn-cli": "3.1.0",
     "postcss-loader": "2.0.9",
     "prompt": "1.0.0",
